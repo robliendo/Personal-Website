@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Personal Website Rob Liendo</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/83ba9b9586.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- ------------ home ------------- -->
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/UXSA logo.png" class="logo" />
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-text">
+          <p>Fullstack Student</p>
+          <h1>
+            Hi, I'm <span>Rob</span><br />Let's create<br />something
+            together...
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!-- ------------ about ------------- -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/about_me_cropped.png" alt="temp about me pic" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              An about page is a place for people to get to know you. You should
+              include your interests, and things you are good at, and in general
+              you should pull back enough of the curtain into your life to
+              interest a potential employer in you as a person.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Frontend Student</span><br />Desiging Web/App interfaces
+                </li>
+                <li><span>Web Development</span><br />Web/App interfaces</li>
+                <li>
+                  <span>App Development</span><br />Building Android/iOS Apps
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>2020-Present</span><br />Current Position</li>
+                <li><span>2018-2020</span><br />Position</li>
+                <li><span>2016-2018</span><br />Position</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>Graduate</span><br />School</li>
+                <li><span>Graduate</span><br />School</li>
+                <li><span>Graduate</span><br />School</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ----------------- services ---------------  -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Portfolio</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-brands fa-codepen"></i>
+            <h2>Web Design</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum
+              a maxime, libero magnam commodi animi nisi deserunt explicabo
+              praesentium maxime laborum, molestias provident eos quas
+              recusandae dignissimos ipsum voluptatibus dicta. Fuga, placeat
+              neque!
+            </p>
+            <a href="#">Learn more...</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-object-group"></i>
+            <h2>UX/UI Design</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum
+              a maxime, libero magnam commodi animi nisi deserunt explicabo
+              praesentium maxime laborum, molestias provident eos quas
+              recusandae dignissimos ipsum voluptatibus dicta. Fuga, placeat
+              neque!
+            </p>
+            <a href="#">Learn more...</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-mobile-screen-button"></i>
+            <h2>App Design</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum
+              a maxime, libero magnam commodi animi nisi deserunt explicabo
+              praesentium maxime laborum, molestias provident eos quas
+              recusandae dignissimos ipsum voluptatibus dicta. Fuga, placeat
+              neque!
+            </p>
+            <a href="#">Learn more...</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+  </body>
+</html>
