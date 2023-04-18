@@ -122,11 +122,12 @@ nav ul li a:hover::after {
   color: #33ff00;
   font-size: 14px;
 }
-/* This is supposed to say none, but it won't show anything at all */
+/* This should say none - works now */
 .tab-contents {
-  display: ;
+  display: none;
 }
-.tab-contents.active.tab {
+/* This shows lists in active tab */
+.tab-contents.active-tab {
   display: block;
 }
 
@@ -148,6 +149,7 @@ nav ul li a:hover::after {
   border-radius: 10px;
   transition: background 0.5s, transform 0.5s;
 }
+/* ---------- this is for the icons -----------  */
 .services-list div i {
   font-size: 50px;
   margin-bottom: 30px;

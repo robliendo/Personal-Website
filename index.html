@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Personal Website Rob Liendo</title>
     <link rel="stylesheet" href="style.css" />
+    <!-- ------ this is for the icon ----------  -->
     <script
       src="https://kit.fontawesome.com/83ba9b9586.js"
       crossorigin="anonymous"
@@ -17,11 +18,12 @@
       <div class="container">
         <nav>
           <img src="images/UXSA logo.png" class="logo" />
+          <!-- ----------------- added the class nav item below ---------------  -->
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#" class="nav-item">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
         <div class="header-text">
@@ -77,7 +79,9 @@
             </div>
             <div class="tab-contents" id="education">
               <ul>
-                <li><span>Graduate</span><br />School</li>
+                <li>
+                  <span>Graduate</span><br />The University of Texas at Austin
+                </li>
                 <li><span>Graduate</span><br />School</li>
                 <li><span>Graduate</span><br />School</li>
               </ul>
@@ -87,6 +91,7 @@
       </div>
     </div>
     <!-- ----------------- services ---------------  -->
+
     <div id="services">
       <div class="container">
         <h1 class="sub-title">My Portfolio</h1>
@@ -120,15 +125,17 @@
             <h2>App Design</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum
-              a maxime, libero magnam commodi animi nisi deserunt explicabo
-              praesentium maxime laborum, molestias provident eos quas
-              recusandae dignissimos ipsum voluptatibus dicta. Fuga, placeat
-              neque!
+              a maxime...
             </p>
             <a href="#">Learn more...</a>
           </div>
         </div>
       </div>
+    </div>
+    <!-- --------- portfolio ------------  -->
+    <div id="portfolio">
+      <div class="container"></div>
+
     </div>
 
     <script>
@@ -146,5 +153,41 @@
         document.getElementById(tabname).classList.add("active-tab");
       }
     </script>
+<!-- ----------------- Contact Form ---------------  -->
+<div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+<div class="about-col-2">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta dolores harum impedit sunt eligendi recusandae quasi voluptas. Natus eligendi amet praesentium ipsam ea iusto minima? Ut impedit architecto vero consectetur at aut, aliquid expedita veritatis magnam incidunt, ipsam eius dignissimos, molestiae culpa dolore hic cum odio. Tempora temporibus blanditiis fuga!
+            </p>
+             </div>
+    <form id="form">
+        <div class = "form-group">
+            <label for = "fname">First Name</label>
+            <input type = "text" name = "fname" value = "" class = "form-control form-control-lg">
+        </div>
+        <div class = "form-group">
+            <label for = "lname">Last Name</label>
+            <input type = "text" name = "lname" value = "" class = "form-control form-control-lg">
+        </div>
+        <div class = "form-group">
+            <label for = "email">Email</label>
+            <input type = "email" name = "email" value = "" class = "form-control form-control-lg">
+        </div>
+        <div class = "form-group">
+            <label for = "message">Message</label>
+            <input type = "text" name = "message" value = "" class = "form-control form-control-lg">
+        </div>
+        <input type="submit" id="submit"></input>
+    </form>
+         </div>
+        </div>
+      </div>
+    </div>
   </body>
+  <script src="contact.js">
+</script>
 </html>
