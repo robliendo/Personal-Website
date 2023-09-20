@@ -2,7 +2,20 @@
 This is my personal about me and only me. Trying this again.
 Making a FORTH ATTEMPT.# Personal-Website
 
+BLOCK 11 INSTRUCTIONS: Block 11: Expanded CSS & HTML
 
+
+
+
+
+
+
+
+
+
+-==-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+BLOCK 9 INSTRUCTIONS:
 
 --------------------- --------------------- --------------------- 
 Block 9: Unit 1 Career Simulation: Personal Website Pt I
